@@ -11,8 +11,6 @@ from langchain_core.runnables import RunnableLambda  # Add this import
 
 llm = Ollama(base_url=os.getenv("OLLAMA_HOST"), model=os.getenv("OLLAMA_MODEL"))
 
-llm = Ollama(base_url="http://172.16.12.97:11434", model="deepseek-r1:8b")
-
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "你是一个世界级的技术专家."),
