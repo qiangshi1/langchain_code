@@ -14,3 +14,4 @@ from langchain.prompts.example_selector import SemanticSimilarityExampleSelector
 
 llm = Ollama(base_url=os.getenv("OLLAMA_HOST"), model=os.getenv("OLLAMA_MODEL"))
 
+# server/client和smith未测试。
