@@ -9,9 +9,10 @@
             "name": "test",
             "type": "debugpy",
             "request": "launch",
-            "program": "12.py",
+            "program": "18.py",
             "console": "integratedTerminal",
-            "python": "/home/shiqiang/python3_11_11_env/bin/python"
+            "python": "/home/shiqiang/python3_11_11_env/bin/python",
+            "justMyCode": false
         }
     ]
 }

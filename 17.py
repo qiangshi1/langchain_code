@@ -59,7 +59,7 @@ temp_chat_history.add_ai_message("你下午在做什么？")
 def trim_messages(chain_input):
   thre=2 # 把它改成5试试
   stored_messages=temp_chat_history.messages
-  if len(stored_messages)<=thre: # 
+  if len(stored_messages)<=thre: #
     return False
   temp_chat_history.clear()
   for message in stored_messages[-thre:]:
@@ -82,5 +82,5 @@ response = chain_with_trimming.invoke(
   {"input": "我叫什么名字？"},
   {"configurable": {"session_id": "unused"}, "callbacks": [InputPrinterCallback()]}
 )
-print(response.content)
+print(response)
 print(temp_chat_history.messages)
